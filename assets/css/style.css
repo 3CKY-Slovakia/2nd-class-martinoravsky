@@ -21,4 +21,7 @@ body > main > form > div > div.note-editing-area > textarea{
     display: none;
 }
 
-
+#map{
+    height: 300px;
+    width: 650px;
+}

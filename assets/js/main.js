@@ -81,6 +81,8 @@ $(document).ready(function(){
     }
 });
 
+
+
 /**
  * SINGLE DATE PICEKR
  */
@@ -99,7 +101,7 @@ $(function(){
 
 /**
  * summernote
- */
+*/
 
 $(document).ready(function() {
     $('#summernote').summernote({
@@ -110,15 +112,34 @@ $(document).ready(function() {
 
 $('#summernote').on('summernote.enter', function(customEvent, nativeEvent) {
     var textik = $("#summernote").code();
+
     $.jGrowl("napisal si: "+textik);
 
+
 });
+
 
 /**
  * google mapka
  */
 
-
+var map;
+$(document).ready(function(){
+    map = new GMaps({
+        el: '#map',
+        lat: 48.160077,
+        lng: 17.066269,
+        zoomControl : true,
+        zoomControlOpt: {
+            style : 'SMALL',
+            position: 'TOP_LEFT'
+        },
+        panControl : false,
+        streetViewControl : false,
+        mapTypeControl: false,
+        overviewMapControl: false
+    });
+});
 
 /**
  * DATE RANGE DATE PICKER
