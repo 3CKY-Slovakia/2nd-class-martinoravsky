@@ -2,6 +2,8 @@ $(document).ready(function(){
     var bulb = $('#light-bulb')
     var bulbState = 'off';
 
+
+
     /**
      * CHANGE THE BULB BACKGROUND AND BULB STATUS ON BULB CLICK
      */
@@ -85,6 +87,38 @@ $(document).ready(function(){
 $(function() {
     $( "#datepicker" ).datepicker();
 });
+
+/**
+ * NICESCROLL
+ */
+$(function(){
+   $("html").niceScroll();
+});
+
+
+
+/**
+ * summernote
+ */
+
+$(document).ready(function() {
+    $('#summernote').summernote({
+        height: 400,
+    });
+
+});
+
+$('#summernote').on('summernote.enter', function(customEvent, nativeEvent) {
+    var textik = $("#summernote").code();
+    $.jGrowl("napisal si: "+textik);
+
+});
+
+/**
+ * google mapka
+ */
+
+
 
 /**
  * DATE RANGE DATE PICKER

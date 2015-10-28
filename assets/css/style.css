@@ -13,3 +13,12 @@ body, html{
     background: url('../img/light_bulb-off.gif');
     cursor: pointer;
 }
+
+/**
+*zmazanie tej druhej sprostej textarey
+*/
+body > main > form > div > div.note-editing-area > textarea{
+    display: none;
+}
+
+

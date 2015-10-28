@@ -19,29 +19,47 @@
     <!-- jQueryUI -->
     <link href="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.css" rel="stylesheet" type="text/css">
 
+    <!-- jGrowl -->
+    <link rel="stylesheet" type="text/css" href="assets/plugins/jGrowl-master/jquery.jgrowl.min.css" />
+
+    <!-- font awesome -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <!-- usmmernote -->
+   <link href="assets/plugins/summernote-master/dist/summernote.css"/>
+    <link href="assets/plugins/summernote-master/dist/summernote-bs3.css"/>
+
+    <!-- jGrowl -->
+    <link href="assets/plugins/jGrowl-master/jquery.jgrowl.min.css"/>
+
+
+
 </head>
 <body>
 
 <main class="container">
-    <!-- light bulb -->
-    <div id="light-bulb">
-        Light bulb is <span class="status">off</span>
-    </div>
+    <br><br>
 
-    <hr/>
+    <!-- summernote -->
+    <h3>Napis nieco, odenteruj, zobrazi sa v notifikacii</h3>
+    <form>
+        <textarea id="summernote"></textarea>
+    </form>
 
-    <!-- date picker -->
-    <p>Date: <input type="text" id="datepicker"></p>
+    <br><br>
 
-    <hr/>
+    <!-- mapa -->
+    <h3>Mapka: (zatial cez iframe) </h3>
 
-    <!-- date picker - range -->
-    <label for="from">From</label>
-    <input type="text" id="from" name="from">
-    <label for="to">To </label>
-    <input type="text" id="to" name="to">
+    <div id="map"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1440.2150270329787!2d17.07352681459702!3d48.15290520767204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssk!2ssk!4v1446037730008" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-    <hr/>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 </main>
 
 <!-- JS FILES -->
@@ -49,7 +67,11 @@
 <script src="assets/plugins/twitter-bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/alertify.js-0.3.11/alertify.js-0.3.11/lib/alertify.min.js"></script>
 <script src="assets/plugins/jquery-ui-1.11.4.custom/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+<script src="assets/plugins/jquery.nicescroll.340/jquery.nicescroll.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/plugins/jGrowl-master/jquery.jgrowl.min.js"></script>
+<script src="assets/plugins/summernote-master/dist/summernote.js"></script>
+
 
 </body>
 </html>
