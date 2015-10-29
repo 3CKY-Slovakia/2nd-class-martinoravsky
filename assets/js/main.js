@@ -119,6 +119,7 @@ $('#summernote').on('summernote.enter', function(customEvent, nativeEvent) {
 });
 
 
+
 /**
  * google mapka
  */
